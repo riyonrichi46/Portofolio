@@ -38,6 +38,14 @@ section::before {
     font-size: 48px;
 }
 
+.home img {
+width: 100%;
+}
+
+.home .arrow img {
+    width: 60px;
+}
+
 #arrow {
     animation: 2s upDown infinite;
 }
@@ -45,11 +53,14 @@ section::before {
 .about::before {
     content: 'About';
 }
+
+.about-exp-item {
+    margin-top: 32px;
+}
 .about-exp-item-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 24px;
 }
 
 .about-exp-item-detail {
@@ -62,17 +73,19 @@ section::before {
 
 .work-img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: "work-1 work-2" "work-3 work-3";
+    width: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "work-1 work-2" 
+                        "work-3 work-3";
     gap: 16px;
-}
-
-.work-img-item {
-    position: relative;
 }
 
 .work-img img {
     width: 100%;
+}
+
+.work-img-item {
+    position: relative;
 }
 
 .work-img-item:hover::after {
@@ -129,7 +142,20 @@ section::before {
 }
 
 .form-label {
-    font-weight: 600;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
 }
 
 @keyframes upDown {
