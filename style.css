@@ -15,7 +15,9 @@ section::before {
     left: -30;
 }
 
-
+body {
+    background-color: #99d5cb;
+}
 
 .btn.button {
     border: 3px solid black;
@@ -28,7 +30,7 @@ section::before {
 }
 
 .navbar {
-    background-color: white;
+    background-color: #00937a;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.35);
 }
 
@@ -127,7 +129,7 @@ width: 100%;
 }
 
 #work-2:hover::after {
-    content: 'Web Developer';
+    content: 'Community Development';
 }
 
 #work-3 {
@@ -135,11 +137,15 @@ width: 100%;
 }
 
 #work-3:hover::after {
-    content: 'Web Developer';
+    content: 'Desain Grafis';
 }
 
 .contact {
     padding-bottom: 128px;
+}
+
+.p-contact {
+    padding: 72px 24px 24px 0;
 }
 
 .contact::before {
@@ -148,7 +154,7 @@ width: 100%;
 
 .contact-form {
     border: 1px solid black;
-    padding: 64px 32px;
+    padding: 42px 32px;
 }
 
 .form-label {
@@ -166,6 +172,10 @@ width: 100%;
         left: 2px;
         font-size: 64px;
     }
+}
+
+@media only screen adn (min-width: 767px) {
+
 }
 
 @keyframes upDown {
